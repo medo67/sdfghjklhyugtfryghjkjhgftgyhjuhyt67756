@@ -5,7 +5,7 @@ const id = settings.id;
 const client = new Discord.Client();
 
 client.on('ready', () => {
-  console.log(`Hi ${client.user.tag} , This Code by : MASTER `);
+  console.log(`Hi ${client.user.tag} , This Code by : Jack `);
   console.log('')
   console.log(`i Have  [ " ${client.guilds.size} " ]`);
 });
@@ -31,16 +31,16 @@ client.on('message', message => {
       message.channel.send("**:white_check_mark: | The Listening Status Has Been Changed To : ``"
    + `${argresult}` + "``**")
   } else 
-  if (message.content.startsWith(adminprefix + 'st')) {
-    client.user.setGame(argresult, "https://www.twitch.tv/masterrra");
+  if (message.content.startsWith(adminprefix + 'str')) {
+    client.user.setGame(argresult, "https://www.twitch.tv/ledom999");
       message.channel.send("**:white_check_mark: | The Streaming Status Has Been Changed To : ``"
    + `${argresult}` + "``**")
   }
-  if (message.content.startsWith(adminprefix + 'setname')) {
+  if (message.content.startsWith(adminprefix + 'name')) {
   client.user.setUsername(argresult).then
       message.channel.send(`Changing The Name To ..**${argresult}** `)
 } else
-if (message.content.startsWith(adminprefix + 'setavatar')) {
+if (message.content.startsWith(adminprefix + 'avatar')) {
   client.user.setAvatar(argresult);
     message.channel.send(`Changing The Avatar To :**${argresult}** `);
 }
